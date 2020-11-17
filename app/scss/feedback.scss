@@ -1,0 +1,22 @@
+.feedback {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	&__link {
+		min-width: 135px;
+		width: calc(50% - 8px);
+		padding: 7px 16px 7px;
+		text-align: center;
+		text-decoration: none;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 36px;
+		color: #2B2D33;
+		background: #FEE600;
+		border-radius: 8px;
+		&--question {
+			line-height: 18px;
+			background: #F0F0F0;
+		}
+	}
+}

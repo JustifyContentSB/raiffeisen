@@ -19,6 +19,10 @@
 			left: 0;
 			background: #E1E1E3;
         }
+    &__wrapper {
+        padding: 30px 0;
+		position: relative;
+    }
     &__up {
         position: absolute;
         z-index: 10;
@@ -73,4 +77,45 @@
 	&__nav {
 		margin-top: 16px;
 	}
+}
+
+@media(min-width: 768px) {
+    .navig {
+        margin-top: 105px;
+		&__wrapper {
+			padding: 60px 0 40px;
+			&::after {
+				right: -36px;
+				left: -36px;
+			}
+			&::before {
+				top: -4px;
+				right: -36px;
+				left: -36px;
+			}
+			& .blog-list {
+				display: none;
+			}
+        }
+        &__up {
+            display: flex;
+        }
+		&__connection {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-wrap: wrap;
+		}
+		&__connection .feedback {
+			display: flex;
+		}
+		&__hotline {
+			width: 156px;
+			margin-top: 0;
+			order: 1;
+		}
+		&__nav {
+			margin-top: 60px;
+		}
+    }
 }
