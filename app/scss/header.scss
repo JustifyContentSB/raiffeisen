@@ -209,6 +209,14 @@
     }
 }
 
+@media(min-width: 1024px) {
+    .header {
+        &__bottom {
+			display: block;
+		}
+    }
+}
+
 @media(min-width: 1200px) {
     .header {
 		&__wrapper {
@@ -223,9 +231,6 @@
 		& .client-list a {
 			display: block;
 			padding: 29px 0 27px;
-		}
-		&__bottom {
-			display: block;
 		}
 	}
 }
