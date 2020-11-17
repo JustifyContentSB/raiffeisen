@@ -848,3 +848,27 @@ body {
   position: relative;
   z-index: 1;
 }
+
+@media (min-width: 768px) {
+  .protect__wrapper {
+    min-height: 504px;
+    padding: 50px 36px 0;
+  }
+  .protect__wrapper:after {
+    width: 713px;
+    height: 307px;
+    background: url(../images/protect/protect-bg-768.jpg);
+    background-position: top 0 left 100%;
+  }
+  .protect__title {
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: 0;
+  }
+  .protect__descr {
+    margin-top: 3px;
+    font-size: 24px;
+    line-height: 30px;
+    color: #fff;
+  }
+}
