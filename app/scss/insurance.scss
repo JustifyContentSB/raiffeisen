@@ -140,3 +140,17 @@
 		}
 	}
 }
+
+@media(min-width: 1200px) {
+    .insurance {
+		&__list {
+			padding: 5px 0;
+			overflow-x: visible;
+		}
+		&__item {
+			&:last-child:after {
+				display: none;
+			}
+		}
+	}
+}

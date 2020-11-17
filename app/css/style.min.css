@@ -455,7 +455,7 @@ body {
 
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 1140px;
     padding: 0;
   }
 }
@@ -1217,5 +1217,15 @@ body {
     margin-top: 13px;
     font-size: 16px;
     line-height: 24px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .insurance__list {
+    padding: 5px 0;
+    overflow-x: visible;
+  }
+  .insurance__item:last-child:after {
+    display: none;
   }
 }
