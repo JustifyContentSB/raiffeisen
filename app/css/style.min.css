@@ -1759,17 +1759,7 @@ body {
 }
 
 .footer__wrapper .blog-list__item {
-  width: 100%;
-  padding: 10px;
   margin-bottom: 6px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .footer__wrapper .blog-list__item--social .blog-list__descr {
@@ -1778,6 +1768,19 @@ body {
 
 .footer__wrapper .blog-list__item--social .blog-list__title {
   margin-top: 6px;
+}
+
+.footer__wrapper .blog-list__item a {
+  width: 100%;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer__wrapper .blog-list__text {
@@ -1815,4 +1818,70 @@ body {
   margin: 0;
   font-size: 13px;
   font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .footer__wrapper {
+    padding: 46px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer__wrapper .feedback {
+    display: none;
+  }
+  .footer__wrapper .site-manage {
+    margin-top: 0;
+  }
+  .footer__wrapper .site-manage li + li {
+    margin-top: 8px;
+  }
+  .footer__wrapper .site-manage .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 17px;
+  }
+  .footer__wrapper .blog-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 5px;
+  }
+  .footer__wrapper .blog-list a {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .footer__copy {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    width: 276px;
+    margin-top: 0;
+    margin-right: 24px;
+    padding-top: 0;
+  }
+  .footer__copy:before {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer__copy {
+    width: 465px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer__copy {
+    width: 475px;
+    margin-right: 106px;
+  }
 }
