@@ -1176,3 +1176,46 @@ body {
   line-height: 22px;
   color: #808185;
 }
+
+@media (min-width: 768px) {
+  .insurance {
+    margin-top: 70px;
+  }
+  .insurance__title {
+    font-size: 48px;
+    line-height: 54px;
+  }
+  .insurance__list {
+    padding: 5px 36px;
+    margin-top: 50px;
+  }
+  .insurance__item {
+    min-width: 364px;
+    margin-right: 24px;
+  }
+  .insurance__item:last-child:after {
+    width: 35px;
+    right: -35px;
+  }
+  .insurance__img img {
+    height: auto;
+  }
+  .insurance__text {
+    padding: 20px 30px 30px;
+  }
+  .insurance__programm {
+    margin-top: 9px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .insurance__name {
+    margin-top: 13px;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .insurance__descr {
+    margin-top: 13px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
