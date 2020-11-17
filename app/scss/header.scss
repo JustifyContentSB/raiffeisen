@@ -187,3 +187,27 @@
 		}
 	}
 }
+
+@media(min-width: 768px) {
+    .header {
+        &__wrapper {
+            padding: 25px 0 23px;
+        }
+        &__list .client-list {
+            display: flex;
+        }
+        &__logo img {
+            width: 145px;
+            height: auto;
+        }
+        &__search img {
+            width: 20px;
+            height: 20px;
+        }
+        &__burger {
+            width: 24px;
+            height: 18px;
+            margin-left: 30px;
+        }
+    }
+}
