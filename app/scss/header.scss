@@ -11,9 +11,6 @@
     }
 	&__nav {
 		&-list {
-			margin: 0;
-			padding: 0;
-			list-style: none;
 			display: flex;
 			flex-wrap: wrap;
 			display: none;
@@ -65,11 +62,8 @@
 		max-width: 860px;
 	}
 	&__list .client-list {
-		padding: 0;
 		padding-top: 2px;
-		margin: 0;
 		margin-left: 55px;
-		list-style: none;
 		display: flex;
 		flex-wrap: wrap;
 		max-width: 303px;
@@ -156,7 +150,6 @@
 		}
 	}
 	&__categories {
-		list-style: none;	
 		padding: 20px 0;
 		margin: 0;
 		display: flex;
