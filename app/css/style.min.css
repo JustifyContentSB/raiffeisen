@@ -453,6 +453,13 @@ body {
   }
 }
 
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+    padding: 0 15px;
+  }
+}
+
 .header__wrapper {
   padding: 17px 0;
   display: -webkit-box;
@@ -492,8 +499,6 @@ body {
   display: block;
   text-decoration: none;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
   color: #2B2D33;
   position: relative;
 }
@@ -563,7 +568,6 @@ body {
 .header__list .client-list a {
   text-decoration: none;
   font-weight: 400;
-  font-size: 16px;
   line-height: 22px;
   color: #2B2D33;
 }
@@ -726,5 +730,26 @@ body {
     width: 24px;
     height: 18px;
     margin-left: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header__wrapper {
+    padding: 0;
+  }
+  .header__nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header__nav-list a {
+    padding: 29px 0 27px;
+  }
+  .header .client-list a {
+    display: block;
+    padding: 29px 0 27px;
+  }
+  .header__bottom {
+    display: block;
   }
 }
