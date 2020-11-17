@@ -1,0 +1,100 @@
+.insurance {
+	margin-top: 45px;
+	.container {
+		padding: 0;
+	}
+	&__title {
+		margin: 0;
+		font-family: 'Navigo', sans-serif;
+		font-weight: bold;
+		font-size: 34px;
+		line-height: 38px;
+		text-align: center;
+		color: #2B2D33;
+	}
+	&__list {
+		padding: 5px 16px;
+		margin-top: 22px;
+		display: flex;
+		overflow-x: scroll;
+		-ms-overflow-style: none;
+		overflow: -moz-scrollbars-none;
+		&::-webkit-scrollbar { 
+			width: 0; 
+			height: 0;
+		}
+	}
+	&__item {
+		min-width: 263px;
+		margin-right: 16px;
+        border-radius: 10px;
+        background: #fff;
+		box-shadow: -1px 6px 18px rgba(43, 45, 51, 0.1);
+		position: relative;
+		&:last-child {
+			margin-right: 0;
+			&:after {
+				content: '';
+				position: absolute;
+				right: -15px;
+				top: 0;
+				height: 100%;
+				width: 15px;
+				background: transparent;
+			}
+		}
+	}
+	&__img {
+		display: flex;
+		border-radius: 12px 12px 0px 0px;
+		overflow: hidden;
+		& img {
+			width: 100%;
+			height: 152px;
+		}
+	}
+	&__text {
+		padding: 10px 16px 20px;
+	}
+	&__type-list {
+		display: flex;
+		flex-wrap: wrap;
+		& li {
+			padding: 6px 10px;
+			background: #F4F4F4;
+			border-radius: 4px;
+			font-weight: normal;
+			font-size: 13px;
+			line-height: 18px;
+			color: #808185;
+			margin-right: 7px;
+			margin-bottom: 7px;
+			&:nth-child(3n) {
+				margin-right: 0;
+			}
+		}
+	}
+	&__programm {
+		margin: 0;
+		margin-top: 2px;
+		font-weight: normal;
+		color: #808185;
+	}
+	&__name {
+		margin: 0;
+		margin-top: 5px;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 26px;
+		color: #2B2D33;
+	}
+	&__descr {
+		margin: 0;
+		margin-top: 4px;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 22px;
+		color: #808185;
+	}
+}
+

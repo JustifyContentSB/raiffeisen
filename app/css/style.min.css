@@ -1052,3 +1052,127 @@ body {
     width: calc(100% - 93px);
   }
 }
+
+.insurance {
+  margin-top: 45px;
+}
+
+.insurance .container {
+  padding: 0;
+}
+
+.insurance__title {
+  margin: 0;
+  font-family: 'Navigo', sans-serif;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 38px;
+  text-align: center;
+  color: #2B2D33;
+}
+
+.insurance__list {
+  padding: 5px 16px;
+  margin-top: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+}
+
+.insurance__list::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.insurance__item {
+  min-width: 263px;
+  margin-right: 16px;
+  border-radius: 10px;
+  background: #fff;
+  -webkit-box-shadow: -1px 6px 18px rgba(43, 45, 51, 0.1);
+          box-shadow: -1px 6px 18px rgba(43, 45, 51, 0.1);
+  position: relative;
+}
+
+.insurance__item:last-child {
+  margin-right: 0;
+}
+
+.insurance__item:last-child:after {
+  content: '';
+  position: absolute;
+  right: -15px;
+  top: 0;
+  height: 100%;
+  width: 15px;
+  background: transparent;
+}
+
+.insurance__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 12px 12px 0px 0px;
+  overflow: hidden;
+}
+
+.insurance__img img {
+  width: 100%;
+  height: 152px;
+}
+
+.insurance__text {
+  padding: 10px 16px 20px;
+}
+
+.insurance__type-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.insurance__type-list li {
+  padding: 6px 10px;
+  background: #F4F4F4;
+  border-radius: 4px;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  color: #808185;
+  margin-right: 7px;
+  margin-bottom: 7px;
+}
+
+.insurance__type-list li:nth-child(3n) {
+  margin-right: 0;
+}
+
+.insurance__programm {
+  margin: 0;
+  margin-top: 2px;
+  font-weight: normal;
+  color: #808185;
+}
+
+.insurance__name {
+  margin: 0;
+  margin-top: 5px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: #2B2D33;
+}
+
+.insurance__descr {
+  margin: 0;
+  margin-top: 4px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #808185;
+}
