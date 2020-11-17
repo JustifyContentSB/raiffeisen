@@ -20,6 +20,8 @@
 		flex-wrap: wrap;
 	}
 	&__item {
+        width: 300px;
+        margin: 0 auto;
 		margin-top: 32px;
 		display: flex;
 		flex-direction: column;
@@ -84,6 +86,29 @@
 			padding: 0;
 			margin-top: 22px;
 			text-align: left;
+		}
+	}
+}
+
+@media(min-width: 1024px) {
+    .features {
+		&:before {
+			display: none;
+		}
+	}
+}
+
+@media(min-width: 1200px) {
+    .features {
+		&__item {
+			width: calc(33.33% - 24px);
+			margin-right: 36px;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+		&__text {
+			margin-top: 0;
+			width: calc(100% - 93px);
 		}
 	}
 }
