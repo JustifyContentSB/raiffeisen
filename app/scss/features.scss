@@ -46,3 +46,44 @@
 		color: #2B2D33;
 	}
 }
+
+@media(min-width: 768px) {
+    .features {
+		&__wrapper {
+			padding-top: 60px;
+		}
+		&__list {
+			flex-direction: row;
+		}
+		&__item {
+			width: calc(33.33% - 16px);
+			margin-top: 0;
+			margin-right: 24px;
+			align-items: flex-start;
+			&:nth-child(3n) {
+				margin-right: 0;
+			}
+		}
+		&__logo {
+			width: 70px;
+			height: 70px;
+			&--umbrella img {
+				width: 46px;
+				height: 47px;
+			}
+			&--time img {
+				width: 47px;
+				height: 47px;
+			}
+			&--money img {
+				width: 56px;
+				height: 47px;
+			}
+		}
+		&__text {
+			padding: 0;
+			margin-top: 22px;
+			text-align: left;
+		}
+	}
+}
