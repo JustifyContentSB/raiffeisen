@@ -16,7 +16,7 @@ navBtn.addEventListener('click', function() {
     navigation.classList.toggle('header__nav-visible');
 })
 
-var anchors = document.querySelectorAll('a[href*="#"]');
+let anchors = document.querySelectorAll('a[href*="#"]');
 for (let anchor of anchors) {
 	anchor.addEventListener('click', function(event) {
 		event.preventDefault();

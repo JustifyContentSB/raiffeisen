@@ -1,7 +1,8 @@
 let gulp = require('gulp');
 let sass = require('gulp-sass');
 let browserSync = require('browser-sync');
-let uglify = require('gulp-uglify');
+// let uglify = require('gulp-uglify');
+let terser = require('gulp-terser');
 let concat = require('gulp-concat');
 let rename = require('gulp-rename');
 let autoprefixer = require('gulp-autoprefixer');
@@ -19,7 +20,7 @@ gulp.task('script', function() {
 
 gulp.task('scss', function() {
     return gulp.src('app/scss/style.scss')
-    .pipe(sass({outputStyle: 'expanded'}))
+    .pipe(sass({outputStyle: 'compressed'}))
     .pipe(autoprefixer('last 2 versions'))
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('app/css'))
@@ -40,7 +41,7 @@ gulp.task('js', function() {
     return gulp.src(['node_modules/slick-carousel/slick/slick.js', 
         'node_modules/magnific-popup/dist/jquery.magnific-popup.js'])
     .pipe(concat('libs.min.js'))
-    .pipe(uglify())
+    .pipe(terser())
     .pipe(gulp.dest('app/js'))
     .pipe(browserSync.reload({stream: true}))
 });
@@ -48,7 +49,7 @@ gulp.task('js', function() {
 gulp.task('js', function() {
     return gulp.src(['app/js/script.js'])
     .pipe(concat('script.min.js'))
-    .pipe(uglify())
+    .pipe(terser())
     .pipe(gulp.dest('app/js'))
     .pipe(browserSync.reload({stream: true}))
 });
